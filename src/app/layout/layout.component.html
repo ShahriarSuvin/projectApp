@@ -1,44 +1,72 @@
+<div class="header">
+
+    <div class="header-fluid">
+        <nav class="navbar navbar-light sticky-top bg-dark flex-md-nowrap p-0 shadow">
+            <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#" style="color: white;">Electricity Billing System</a>
+            <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+            <ul class="navbar-nav px-3">
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link" href="#" style="color: white;">Sign in / sign up</a>
+
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</div>
+
 <div class="container-fluid">
-    <header>
-        <div class="header">
-            <nav class="navbar navbar-light sticky-top bg-light flex-md-nowrap p-0 shadow">
-                <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Result System</a>
-                <ul class="navbar-nav px-3">
-                    <li class="nav-item text-nowrap">
-                        <a class="nav-link" href="#">Sign out</a>
+    <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="sidebar-sticky pt-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" routerLink="/deshboard">
+                            <span data-feather="home"></span>
+                            Dashboard <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" routerLink="/customer">
+                            <span data-feather="file"></span>
+                            Customer
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" routerLink="/bill">
+                            <span data-feather="file"></span>
+                            Pay Bill
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" routerLink="/meter">
+                            <span data-feather="file"></span>
+                            Meter Reading
+                        </a>
+                    </li><li class="nav-item">
+                        <a class="nav-link" href="#" routerLink="/
+                        .">
+                            <span data-feather="file"></span>
+                            Transaction
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" routerLink="/report">
+                            <span data-feather="bar-chart-2"></span>
+                            Reports
+                        </a>
                     </li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="container-fluid">
-        <div class="row">
-            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-                <div class="sidebar-sticky pt-3">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                <span data-feather="home"></span>
-                                Dashboard <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="file"></span>
-                                Orders
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-                <router-outlet></router-outlet>
-            </main>
-        </div>
+            </div>
+        </nav>
     </div>
-    
 </div>
+
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <router-outlet></router-outlet>
+    <h1>hi</h1>
+    <h2>hello</h2>
+</main>
 
 <footer class="footer mt-auto" style="padding-left: 12rem;">
     <div class="container">
