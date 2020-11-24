@@ -30,25 +30,23 @@ const routes: Routes = [
         component: DashboardComponent
       },
 
-      {
-        path: '**', redirectTo: 'dashboard'
-      },
+      { path: 'customer', component: CustomerComponent },
+
+      { path: 'bill', component: PayBillComponent},
+
+      { path: 'meter', component: MeterReadingComponent},
+
+      { path: 'transaction', component: TransactionComponent},   
 
       
     ]
 
   },
   {
-    path: '**', redirectTo: 'login'
+    path: '**', redirectTo: 'dashboard'
   },
 
-  { path: 'customer', component: CustomerComponent },
-
-      { path: 'bill', component: PayBillComponent},
-
-      { path: 'meter', component: MeterReadingComponent},
-
-      { path: 'transaction', component: TransactionComponent}
+  
 ];
 
 @NgModule({
